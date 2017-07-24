@@ -12,12 +12,8 @@ public class GroundScript : MonoBehaviour {
 		//groundRigidbody = GetComponent<Rigidbody>();
 	
 	}
-	
-	// Update is called once per frame
-	void FixedUpdate () {
-		/*if(){
-			var number = Random.Range (1, 25);
-			print (number);}*/	 
+
+	void FixedUpdate () {	 
 		Move (runSpeed);
 		
 	}
