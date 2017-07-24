@@ -1,0 +1,93 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE project PUBLIC "-//audacityproject-1.3.0//DTD//EN" "http://audacity.sourceforge.net/xml/audacityproject-1.3.0.dtd" >
+<project xmlns="http://audacity.sourceforge.net/xml/" projname="vovvov_data" version="1.3.0" audacityversion="2.1.0" sel0="0.0000000000" sel1="2.4435827664" vpos="0" h="0.0000000000" zoom="288.9192335244" rate="44100.0" snapto="off" selectionformat="hh:mm:ss + milliseconds">
+	<tags/>
+	<wavetrack name="ZOOM0029" channel="0" linked="1" mute="0" solo="0" height="150" minimized="0" isSelected="1" rate="44100" gain="1.0" pan="0.0">
+		<waveclip offset="0.00000000">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="96275">
+				<waveblock start="0">
+					<simpleblockfile filename="e00001c1.au" len="96275" min="-0.991094" max="0.891469" rms="0.07114"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="1">
+				<controlpoint t="2.183083900227" val="1.000000000000"/>
+			</envelope>
+		</waveclip>
+		<waveclip offset="2.18310658">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="130">
+				<waveblock start="0">
+					<simpleblockfile filename="e0000d0e.au" len="130" min="0.012454" max="0.040891" rms="0.002064"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="2">
+				<controlpoint t="0.000000000000" val="1.000000000000"/>
+				<controlpoint t="0.002925170068" val="1.000000000000"/>
+			</envelope>
+		</waveclip>
+		<waveclip offset="2.18605442">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="1790">
+				<waveblock start="0">
+					<simpleblockfile filename="e00003ca.au" len="1790" min="-0.012904" max="0.011885" rms="0.000567"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="2">
+				<controlpoint t="0.000000000000" val="1.000000000000"/>
+				<controlpoint t="0.040566893424" val="1.000000000000"/>
+			</envelope>
+		</waveclip>
+		<waveclip offset="2.22664399">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="2041">
+				<waveblock start="0">
+					<simpleblockfile filename="e0000541.au" len="2041" min="0.0" max="0.0" rms="0.0"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="1">
+				<controlpoint t="0.000000000000" val="1.000000000000"/>
+			</envelope>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="ZOOM0029" channel="1" linked="0" mute="0" solo="0" height="150" minimized="0" isSelected="1" rate="44100" gain="1.0" pan="0.0">
+		<waveclip offset="0.00000000">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="96275">
+				<waveblock start="0">
+					<simpleblockfile filename="e0000a4b.au" len="96275" min="-1.012743" max="0.978225" rms="0.092218"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="1">
+				<controlpoint t="2.183083900227" val="1.000000000000"/>
+			</envelope>
+		</waveclip>
+		<waveclip offset="2.18310658">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="130">
+				<waveblock start="0">
+					<simpleblockfile filename="e000056f.au" len="130" min="0.021487" max="0.041276" rms="0.002181"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="2">
+				<controlpoint t="0.000000000000" val="1.000000000000"/>
+				<controlpoint t="0.002925170068" val="1.000000000000"/>
+			</envelope>
+		</waveclip>
+		<waveclip offset="2.18605442">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="1790">
+				<waveblock start="0">
+					<simpleblockfile filename="e00000ac.au" len="1790" min="-0.001374" max="0.021226" rms="0.000471"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="2">
+				<controlpoint t="0.000000000000" val="1.000000000000"/>
+				<controlpoint t="0.040566893424" val="1.000000000000"/>
+			</envelope>
+		</waveclip>
+		<waveclip offset="2.22664399">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="2041">
+				<waveblock start="0">
+					<simpleblockfile filename="e000072b.au" len="2041" min="0.0" max="0.0" rms="0.0"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="1">
+				<controlpoint t="0.000000000000" val="1.000000000000"/>
+			</envelope>
+		</waveclip>
+	</wavetrack>
+</project>
