@@ -199,8 +199,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: -13}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_Children:
-  - {fileID: 1090916036}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
 --- !u!114 &588568686
@@ -258,7 +257,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
 --- !u!1 &828416957
 GameObject:
   m_ObjectHideFlags: 0
@@ -347,13 +346,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1090916035}
-  m_LocalRotation: {x: 0.28120586, y: -0, z: -0, w: 0.9596475}
-  m_LocalPosition: {x: 0, y: 2.1999998, z: -2.2699995}
+  m_LocalRotation: {x: 0.24425939, y: -0, z: -0, w: 0.96970993}
+  m_LocalPosition: {x: 0, y: 2.1999998, z: -17.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 32.653, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 28.256, y: 0, z: 0}
   m_Children: []
-  m_Father: {fileID: 588568685}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
 --- !u!81 &1090916037
 AudioListener:
   m_ObjectHideFlags: 0
@@ -455,7 +454,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: e42c617cf1568134aab48835a911301a, type: 2}
+  - {fileID: 2100000, guid: a284defb418df914780c8bcda5a1c2e0, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
