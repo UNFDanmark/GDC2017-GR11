@@ -9,6 +9,7 @@ public class RandomGenerator : MonoBehaviour {
 	public Vector3 spawnPoint{get{ return new Vector3 (0, -1, maxSpawnDistance);}}
 	public bool groundPresent;
 	public GameObject obstacle;
+	public GameObject objective;
 	void Update()
 	{
 		SpawnGround ();
