@@ -20,8 +20,13 @@ public class DoggScript : MonoBehaviour {
 	}
 
 	void FixedUpdate () {
-		
+
 	}
+
+
+
+
+
 	public void Move (float speed){
 		dogRigidbody.velocity = new Vector3 (dogRigidbody.velocity.x, dogRigidbody.velocity.y, speed);
 	}
