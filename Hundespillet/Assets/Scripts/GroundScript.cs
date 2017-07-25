@@ -3,8 +3,9 @@ using System.Collections;
 
 public class GroundScript : MonoBehaviour {
 	
-	public int runSpeed = 10;
+	public DifficultyHandlerScript difficultyHandler;
 	public Rigidbody groundRigidbody;
+	public int moveSpeed = 10;
 
 	// Use this for initialization
 
@@ -14,7 +15,7 @@ public class GroundScript : MonoBehaviour {
 	}
 
 	void FixedUpdate () {	 
-		Move (runSpeed);
+		Move (difficultyHandler.runSpeedModifier * moveSpeed);
 		
 	}
 	public void Move (float speed){

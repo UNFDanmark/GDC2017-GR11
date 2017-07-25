@@ -6,6 +6,7 @@ public class DoggScript : MonoBehaviour {
 	public Rigidbody dogRigidbody;
 	public int jumpHeight = 10;
 	public KeyCode jumpButton = KeyCode.J;
+	public PointsHandlerScript pointsHandler;
 
 
 	void Awake () {
@@ -23,7 +24,10 @@ public class DoggScript : MonoBehaviour {
 
 	}
 
-
+	void OnTriggerEnter(Collider trigger)
+	{
+		PickUp (trigger.gameObject);
+	}
 
 
 
@@ -35,5 +39,12 @@ public class DoggScript : MonoBehaviour {
 	}
 	public void Jump(){
 		dogRigidbody.velocity = new Vector3 (dogRigidbody.velocity.x, jumpHeight, dogRigidbody.velocity.z);
+	}
+
+	public void PickUp (GameObject target)
+	{
+		Destroy (target);
+
+		pointsHandler.AddPoints (1);
 	}
 }
