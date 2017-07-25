@@ -11,7 +11,7 @@ public class PointsHandlerScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+		
 	}
 
 	public void AddPoints(int pointsAdd)
