@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class DoggScript : MonoBehaviour {
-	public int horizontalRunSpeed = 10;
+	public int horizontalRunSpeed = 6;
 	public Rigidbody dogRigidbody;
 	public int jumpHeight = 10;
 	public KeyCode jumpButton = KeyCode.J;
