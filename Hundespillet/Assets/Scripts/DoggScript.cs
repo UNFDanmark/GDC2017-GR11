@@ -2,12 +2,12 @@
 using System.Collections;
 
 public class DoggScript : MonoBehaviour {
-	public int horizontalRunSpeed = 10;
+	public int horizontalRunSpeed = 6;
 	public Rigidbody dogRigidbody;
 	public int jumpHeight = 10;
 	public KeyCode jumpButton = KeyCode.J;
 	public PointsHandlerScript pointsHandler;
-
+	public float groundDistance=0.6f;
 
 	void Awake () {
 		dogRigidbody = GetComponent<Rigidbody>();
@@ -38,7 +38,9 @@ public class DoggScript : MonoBehaviour {
 		dogRigidbody.velocity = new Vector3 (Input.GetAxis("Horizontal") * speed, dogRigidbody.velocity.y, dogRigidbody.velocity.z);
 	}
 	public void Jump(){
-		dogRigidbody.velocity = new Vector3 (dogRigidbody.velocity.x, jumpHeight, dogRigidbody.velocity.z);
+		if (Physics.Raycast (transform.position, Vector3.down, groundDistance, 1<<8)) {
+			dogRigidbody.velocity = new Vector3 (dogRigidbody.velocity.x, jumpHeight, dogRigidbody.velocity.z);
+		}
 	}
 
 	public void PickUp (GameObject target)
