@@ -13,13 +13,13 @@ public class DifficultyHandlerScript : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	public void Update () {
 	
 		RunSpeedIncrease ();
 	}
 
 	public void RunSpeedIncrease()
 	{
-		runSpeedModifier = 1 + (pointsHandler.points * 10 + Time.realtimeSinceStartup) * 0.01f;
+		runSpeedModifier = 1 + (pointsHandler.points*5 + Time.realtimeSinceStartup) * 0.05f;	
 	}
 }
