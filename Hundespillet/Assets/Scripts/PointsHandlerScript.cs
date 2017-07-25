@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine.UI;
 public class PointsHandlerScript : MonoBehaviour {
 	public int points = 0;
-	public Text pointsText;
+	//public Text pointsText;
 	// Use this for initialization
 	void Start () {
 	
@@ -18,6 +18,6 @@ public class PointsHandlerScript : MonoBehaviour {
 	{
 		points += pointsAdd;
 
-		pointsText.text = "Bikinier: " + points;
+		//pointsText.text = "Bikinier: " + points;
 	}
 }
