@@ -12,8 +12,10 @@ public class ButtonScript : MonoBehaviour {
 	void Update () {
 	
 	}
-	void OnClick()
+	public void Retry()
 	{
 		SceneManager.LoadScene ("BeachRun");
+
+		print ("click");
 	}
 }

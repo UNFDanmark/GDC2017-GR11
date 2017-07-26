@@ -9,6 +9,7 @@ public class DoggScript : MonoBehaviour {
 	public PointsHandlerScript pointsHandler;
 	public float groundDistance=0.6f;
 	public AudioSource dogSound;
+	public AudioClip bikiniSound;
 
 	void Awake () {
 		dogRigidbody = GetComponent<Rigidbody>();
@@ -50,7 +51,7 @@ public class DoggScript : MonoBehaviour {
 
 		pointsHandler.AddPoints (1);
 
-		dogSound.PlayOneShot ("");
+		dogSound.PlayOneShot (bikiniSound);
 
 
 	}
