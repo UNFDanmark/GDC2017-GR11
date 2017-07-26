@@ -20,6 +20,6 @@ public class DifficultyHandlerScript : MonoBehaviour {
 
 	public void RunSpeedIncrease()
 	{
-		runSpeedModifier = 1 + (pointsHandler.points*10 + Time.realtimeSinceStartup) * 0.015f;	
+		runSpeedModifier = 1 + (pointsHandler.points*10 + Time.timeSinceLevelLoad) * 0.015f;	
 	}
 }
