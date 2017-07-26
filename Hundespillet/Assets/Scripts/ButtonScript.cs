@@ -15,7 +15,5 @@ public class ButtonScript : MonoBehaviour {
 	public void Retry()
 	{
 		SceneManager.LoadScene ("BeachRun");
-
-		print ("click");
 	}
 }
