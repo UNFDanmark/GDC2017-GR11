@@ -46,49 +46,43 @@ public class RandomGenerator : MonoBehaviour {
 					groundCount = 0;
 				}
 				if (isHard == true) {
-					for (int i = 0; i < 4; i++) {
-						int randomNumber = Random.Range (1, 4);
-						if (randomNumber == 1) {
-							GameObject obstacle_instance = (GameObject)Instantiate (obstacle, ground.transform.position, Quaternion.identity);
-							obstacle_instance.transform.parent = lastGroundSpawned.transform;
-							obstacle_instance.transform.localPosition = new Vector3 (Random.Range (-0.45f, 0.45f), 1, Random.Range (-0.45f, 0.45f));
-						} else if (randomNumber == 2) {
-							GameObject obstacle_instance = (GameObject)Instantiate (parasolPrefab, ground.transform.position, Quaternion.identity);
-							obstacle_instance.transform.parent = lastGroundSpawned.transform;
-							obstacle_instance.transform.localPosition = new Vector3 (Random.Range (-0.45f, 0.45f), 1, Random.Range (-0.45f, 0.45f));
-						} else {
-							GameObject obstacle_instance = (GameObject)Instantiate (coolerPrefab, ground.transform.position, Quaternion.identity);
-							obstacle_instance.transform.parent = lastGroundSpawned.transform;
-							obstacle_instance.transform.localPosition = new Vector3 (Random.Range (-0.45f, 0.45f), 1, Random.Range (-0.45f, 0.45f));
-						}
-							
-					}
+					SpawnObstacles (4);
 					GameObject objectivePrefab_instance = (GameObject)Instantiate (objectivePrefab, ground.transform.position, Quaternion.identity);
 
 					objectivePrefab_instance.transform.parent = lastGroundSpawned.transform;
 					objectivePrefab_instance.transform.localPosition = new Vector3 (Random.Range (-0.45f, 0.45f), 1, Random.Range (-0.45f, 0.45f));
 
 				} else {
-					for (int i = 0; i < 2; i++) {
-						int randomNumber = Random.Range (1, 4);
-						if (randomNumber == 1) {
-							GameObject obstacle_instance = (GameObject)Instantiate (obstacle, ground.transform.position, Quaternion.identity);
-							obstacle_instance.transform.parent = lastGroundSpawned.transform;
-							obstacle_instance.transform.localPosition = new Vector3 (Random.Range (-0.45f, 0.45f), 1, Random.Range (-0.45f, 0.45f));
-						} else if (randomNumber == 2) {
-							GameObject obstacle_instance = (GameObject)Instantiate (parasolPrefab, ground.transform.position, Quaternion.identity);
-							obstacle_instance.transform.parent = lastGroundSpawned.transform;
-							obstacle_instance.transform.localPosition = new Vector3 (Random.Range (-0.45f, 0.45f), 1, Random.Range (-0.45f, 0.45f));
-						} else {
-							GameObject obstacle_instance = (GameObject)Instantiate (coolerPrefab, ground.transform.position, Quaternion.identity);
-							obstacle_instance.transform.parent = lastGroundSpawned.transform;
-							obstacle_instance.transform.localPosition = new Vector3 (Random.Range (-0.45f, 0.45f), 1, Random.Range (-0.45f, 0.45f));
-						}
-					}
+					
+					SpawnObstacles (2);  
 				}
 				groundCount++;
 
 			}
+		}
+	}
+	public void SpawnObstacles(int numberOfObjects){
+		for (int i = 0; i < numberOfObjects; i++) {
+			int randomNumber = Random.Range (1, 4);
+			GameObject objectToSpawn;
+			float heightOffset;
+			if (randomNumber == 1) {
+
+				objectToSpawn = obstacle;
+				heightOffset = 0.5f;
+
+			} else if (randomNumber == 2) {
+
+				objectToSpawn = parasolPrefab;
+				heightOffset = 1;
+			} else {
+
+				objectToSpawn = coolerPrefab;
+				heightOffset = 1;
+			}
+			GameObject obstacle_instance = (GameObject)Instantiate (objectToSpawn, ground.transform.position, objectToSpawn.transform.rotation);
+			obstacle_instance.transform.parent = lastGroundSpawned.transform;
+			obstacle_instance.transform.localPosition = new Vector3 (Random.Range (-0.45f, 0.45f), heightOffset, Random.Range (-0.45f, 0.45f));	
 		}
 	}
 }
