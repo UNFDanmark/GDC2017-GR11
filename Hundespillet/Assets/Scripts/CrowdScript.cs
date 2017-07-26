@@ -6,7 +6,7 @@ public class CrowdScript : MonoBehaviour {
 	public float amplitude = 50;
 	public float frequency = 2;
 	public float phase =0;
-	public int crowdStartingY = 50;
+	public int crowdStartingY = 20;
 
 	// Use this for initialization
 	void Start () {
