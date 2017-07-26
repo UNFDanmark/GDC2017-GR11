@@ -8,6 +8,7 @@ public class DoggScript : MonoBehaviour {
 	public KeyCode jumpButton = KeyCode.J;
 	public PointsHandlerScript pointsHandler;
 	public float groundDistance=0.6f;
+	public AudioSource dogSound;
 
 	void Awake () {
 		dogRigidbody = GetComponent<Rigidbody>();
@@ -48,5 +49,9 @@ public class DoggScript : MonoBehaviour {
 		Destroy (target);
 
 		pointsHandler.AddPoints (1);
+
+		dogSound.PlayOneShot ("");
+
+
 	}
 }
