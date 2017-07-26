@@ -3,18 +3,18 @@ using System.Collections;
 
 public class GroundScript : MonoBehaviour {
 	
-	public int runSpeed = 10;
+	DifficultyHandlerScript difficultyHandler;
 	public Rigidbody groundRigidbody;
+	public int moveSpeed = 10;
 
 	// Use this for initialization
 
-	void Awake() {
-		//groundRigidbody = GetComponent<Rigidbody>();
-	
+	void Start() {
+		difficultyHandler = GameObject.Find ("Difficulty Handler").GetComponent<DifficultyHandlerScript> ();
 	}
 
 	void FixedUpdate () {	 
-		Move (runSpeed);
+		Move (difficultyHandler.runSpeedModifier * moveSpeed);
 		
 	}
 	public void Move (float speed){

@@ -2,11 +2,15 @@
 using System.Collections;
 
 public class DoggScript : MonoBehaviour {
-	public int horizontalRunSpeed = 10;
+	public int horizontalRunSpeed = 6;
 	public Rigidbody dogRigidbody;
 	public int jumpHeight = 10;
 	public KeyCode jumpButton = KeyCode.J;
-
+	public PointsHandlerScript pointsHandler;
+	public float groundDistance=0.6f;
+	public AudioSource dogSound;
+	public AudioClip bikiniSound;
+	public AudioClip jumpSound;
 
 	void Awake () {
 		dogRigidbody = GetComponent<Rigidbody>();
@@ -23,7 +27,10 @@ public class DoggScript : MonoBehaviour {
 
 	}
 
-
+	void OnTriggerEnter(Collider trigger)
+	{
+		PickUp (trigger.gameObject);
+	}
 
 
 
@@ -34,6 +41,20 @@ public class DoggScript : MonoBehaviour {
 		dogRigidbody.velocity = new Vector3 (Input.GetAxis("Horizontal") * speed, dogRigidbody.velocity.y, dogRigidbody.velocity.z);
 	}
 	public void Jump(){
-		dogRigidbody.velocity = new Vector3 (dogRigidbody.velocity.x, jumpHeight, dogRigidbody.velocity.z);
+		if (Physics.Raycast (transform.position, Vector3.down, groundDistance, 1<<8)) {
+			dogRigidbody.velocity = new Vector3 (dogRigidbody.velocity.x, jumpHeight, dogRigidbody.velocity.z);
+			dogSound.PlayOneShot (jumpSound);
+		}
+	}
+
+	public void PickUp (GameObject target)
+	{
+		Destroy (target);
+
+		pointsHandler.AddPoints (1);
+
+		dogSound.PlayOneShot (bikiniSound);
+
+
 	}
 }
