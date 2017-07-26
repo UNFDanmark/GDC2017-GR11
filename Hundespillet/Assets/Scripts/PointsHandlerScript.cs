@@ -1,12 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class PointsHandlerScript : MonoBehaviour {
 	public int points = 0;
 	public Text pointsText;
+	public GameObject pointsHandler;
 	// Use this for initialization
 	void Start () {
-	
+		if(SceneManager.GetActiveScene().name=="BeachRun"){
+		DontDestroyOnLoad (pointsHandler);
+		}
 	}
 	
 	// Update is called once per frame
@@ -20,4 +24,5 @@ public class PointsHandlerScript : MonoBehaviour {
 
 		pointsText.text = "Bikinier: " + points;
 	}
+
 }
