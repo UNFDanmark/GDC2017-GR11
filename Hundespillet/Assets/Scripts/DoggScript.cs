@@ -10,6 +10,7 @@ public class DoggScript : MonoBehaviour {
 	public float groundDistance=0.6f;
 	public AudioSource dogSound;
 	public AudioClip bikiniSound;
+	public AudioClip jumpSound;
 
 	void Awake () {
 		dogRigidbody = GetComponent<Rigidbody>();
@@ -42,6 +43,7 @@ public class DoggScript : MonoBehaviour {
 	public void Jump(){
 		if (Physics.Raycast (transform.position, Vector3.down, groundDistance, 1<<8)) {
 			dogRigidbody.velocity = new Vector3 (dogRigidbody.velocity.x, jumpHeight, dogRigidbody.velocity.z);
+			dogSound.PlayOneShot (jumpSound);
 		}
 	}
 
