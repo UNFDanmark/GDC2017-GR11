@@ -22,7 +22,7 @@ GameObject:
   - 33: {fileID: 33000011986451462}
   - 65: {fileID: 65000014103466386}
   - 23: {fileID: 23000013976272428}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Invisible Wall2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,7 +42,7 @@ GameObject:
   - 23: {fileID: 23000011311717100}
   - 114: {fileID: 114000013251550822}
   - 54: {fileID: 54000013283199890}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -60,7 +60,7 @@ GameObject:
   - 33: {fileID: 33000010378148826}
   - 65: {fileID: 65000011212948890}
   - 23: {fileID: 23000011330381690}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Invisible Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -278,5 +278,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d35e69727c308c846b23383d7e8a246e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  runSpeed: 10
   groundRigidbody: {fileID: 54000013283199890}
+  moveSpeed: 10
