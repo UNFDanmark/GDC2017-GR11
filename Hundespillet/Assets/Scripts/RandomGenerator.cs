@@ -16,7 +16,6 @@ public class RandomGenerator : MonoBehaviour {
 	public int easyGround=3;
 	public int groundCount=0;
 
-
 	void Update()
 	{
 		SpawnGround ();
