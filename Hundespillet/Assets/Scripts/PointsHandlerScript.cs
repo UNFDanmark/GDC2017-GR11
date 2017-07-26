@@ -8,7 +8,7 @@ public class PointsHandlerScript : MonoBehaviour {
 	public GameObject pointsHandler;
 	// Use this for initialization
 	void Start () {
-		if(SceneManager.GetActiveScene="BeachRun"){
+		if(SceneManager.GetActiveScene().name=="BeachRun"){
 		DontDestroyOnLoad (pointsHandler);
 		}
 	}

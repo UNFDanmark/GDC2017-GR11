@@ -697,6 +697,10 @@ MonoBehaviour:
   checkRadius: 15
   groundPresent: 0
   obstacle: {fileID: 1000012902714348, guid: 0404270be81a0fa459da86f1f8d12841, type: 2}
+  parasolPrefab: {fileID: 1000011357811834, guid: 833293467881fc845ba156f33f77ce10,
+    type: 2}
+  coolerPrefab: {fileID: 1000011218956540, guid: cebb0ebe46f9f4a43bf770aed7082da7,
+    type: 2}
   objectivePrefab: {fileID: 1000014160762030, guid: 9d77810df696de84b8c53f95db74c38a,
     type: 2}
   lastGroundSpawned: {fileID: 0}
