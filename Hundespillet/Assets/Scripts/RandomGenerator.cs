@@ -27,6 +27,7 @@ public class RandomGenerator : MonoBehaviour {
 	void Start ()
 	{
 		lastGroundSpawned = Instantiate (ground);
+		lastGroundSpawned.transform.position = new Vector3 (0, 0, 0);
 
 		SpawnGround ();
 	}
@@ -51,7 +52,7 @@ public class RandomGenerator : MonoBehaviour {
 					GameObject objectivePrefab_instance = (GameObject)Instantiate (objectivePrefab, ground.transform.position, Quaternion.identity);
 
 					objectivePrefab_instance.transform.parent = lastGroundSpawned.transform;
-					objectivePrefab_instance.transform.localPosition = new Vector3 (Random.Range (-0.45f, 0.45f), 1, Random.Range (-0.45f, 0.45f));
+					objectivePrefab_instance.transform.localPosition = new Vector3 (Random.Range (-5, 5), 1, Random.Range (-5, 5));
 
 				} else {
 					
@@ -87,7 +88,7 @@ public class RandomGenerator : MonoBehaviour {
 			}
 			GameObject obstacle_instance = (GameObject)Instantiate (objectToSpawn, ground.transform.position, objectToSpawn.transform.rotation);
 			obstacle_instance.transform.parent = lastGroundSpawned.transform;
-			obstacle_instance.transform.localPosition = new Vector3 (Random.Range (-0.45f, 0.45f), heightOffset, Random.Range (-0.45f, 0.45f));	
+			obstacle_instance.transform.localPosition = new Vector3 (Random.Range (-5, 5), heightOffset, Random.Range (-5, 5));	
 		}
 	}
 }
