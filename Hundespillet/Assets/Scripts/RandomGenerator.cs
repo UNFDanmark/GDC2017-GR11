@@ -65,7 +65,7 @@ public class RandomGenerator : MonoBehaviour {
 	}
 	public void SpawnObstacles(int numberOfObjects){
 		for (int i = 0; i < numberOfObjects; i++) {
-			int randomNumber = Random.Range (1, 4);
+			int randomNumber = Random.Range (1, 5);
 			GameObject objectToSpawn;
 			float heightOffset;
 			if (randomNumber == 1) {
@@ -84,7 +84,7 @@ public class RandomGenerator : MonoBehaviour {
 			} else {
 
 				objectToSpawn = parasolPrefab;
-				heightOffset = 1;
+				heightOffset = 2.95f;
 			}
 			GameObject obstacle_instance = (GameObject)Instantiate (objectToSpawn, ground.transform.position, objectToSpawn.transform.rotation);
 			obstacle_instance.transform.parent = lastGroundSpawned.transform;
