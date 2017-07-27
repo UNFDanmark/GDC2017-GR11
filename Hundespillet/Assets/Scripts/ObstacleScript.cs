@@ -16,6 +16,7 @@ public class ObstacleScript : MonoBehaviour {
 		}
 		public void GameOver()
 		{
+
 			SceneManager.LoadScene("GameOver");
 		}
 }
