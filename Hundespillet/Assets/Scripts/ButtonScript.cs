@@ -10,7 +10,7 @@ public class ButtonScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKeyDown(restartButton)) {
+		if (Input.GetKeyDown(restartButton) || Input.GetMouseButtonDown(0)) {
 			Retry ();
 		}
 	}
