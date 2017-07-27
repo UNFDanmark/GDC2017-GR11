@@ -80,7 +80,7 @@ public class RandomGenerator : MonoBehaviour {
 			} else if (randomNumber == 3) {
 
 				objectToSpawn = chairPrefab;
-				heightOffset = -0.12f;
+				heightOffset = 2.22f;
 			} else {
 
 				objectToSpawn = parasolPrefab;
