@@ -11,7 +11,7 @@ public class ObstacleScript : MonoBehaviour {
 	public void OnCollisionEnter (Collision collision) {
 		if(collision.collider.CompareTag("Obstacle"))
 		{
-			//GameOver ();
+			GameOver ();
 			}
 		}
 		public void GameOver()
