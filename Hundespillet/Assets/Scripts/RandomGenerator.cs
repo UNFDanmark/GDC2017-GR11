@@ -49,10 +49,10 @@ public class RandomGenerator : MonoBehaviour {
 				}
 				if (isHard == true) {
 					SpawnObstacles (4);
-					GameObject objectivePrefab_instance = (GameObject)Instantiate (objectivePrefab, ground.transform.position, Quaternion.identity);
+					GameObject objectivePrefab_instance = (GameObject)Instantiate (objectivePrefab);
 
 					objectivePrefab_instance.transform.parent = lastGroundSpawned.transform;
-					objectivePrefab_instance.transform.localPosition = new Vector3 (Random.Range (-5, 5), 1, Random.Range (-5, 5));
+					objectivePrefab_instance.transform.localPosition = new Vector3 (Random.Range (-5, 5), 1, Random.Range (-15, 15));
 
 				} else {
 					
@@ -88,7 +88,7 @@ public class RandomGenerator : MonoBehaviour {
 			}
 			GameObject obstacle_instance = (GameObject)Instantiate (objectToSpawn, ground.transform.position, objectToSpawn.transform.rotation);
 			obstacle_instance.transform.parent = lastGroundSpawned.transform;
-			obstacle_instance.transform.localPosition = new Vector3 (Random.Range (-5, 5), heightOffset, Random.Range (-5, 5));	
+			obstacle_instance.transform.localPosition = new Vector3 (Random.Range (-5, 5), heightOffset, Random.Range (-15, 15));	
 		}
 	}
 }

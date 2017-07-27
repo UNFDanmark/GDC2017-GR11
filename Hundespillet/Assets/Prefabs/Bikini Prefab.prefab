@@ -23,6 +23,7 @@ GameObject:
   - 23: {fileID: 23000011930630864}
   - 95: {fileID: 95000010800175882}
   - 114: {fileID: 114000013774405246}
+  - 65: {fileID: 65000010794620108}
   m_Layer: 0
   m_Name: Bikini Prefab
   m_TagString: Target
@@ -36,10 +37,10 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013274639364}
-  m_LocalRotation: {x: -0.70699275, y: -0.0005205201, z: -0.0017335512, w: 0.7072185}
-  m_LocalPosition: {x: 0, y: 2.0443892, z: -3}
+  m_LocalRotation: {x: -0.61571276, y: -0.34770367, z: -0.34770367, w: 0.61571276}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
-  m_LocalEulerAnglesHint: {x: -89.9, y: -5.46, z: -79.58}
+  m_LocalEulerAnglesHint: {x: -89.981, y: 0, z: -58.847004}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -79,6 +80,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013274639364}
   m_Mesh: {fileID: 4300000, guid: e3178ad319514a0449c1c068b8d82bde, type: 3}
+--- !u!65 &65000010794620108
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013274639364}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6216688, y: 13.07, z: 4.8}
+  m_Center: {x: -0.034617007, y: 0.0153512955, z: 2.4019017}
 --- !u!95 &95000010800175882
 Animator:
   serializedVersion: 3
@@ -109,7 +122,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 1000013274639364}
   rotationSpeed: 20
-  amplitude: 1
-  frequency: 2
+  amplitude: 0.5
+  frequency: 1
   phase: 0
-  targetStartingY: 1.5
+  targetStartingY: 1
