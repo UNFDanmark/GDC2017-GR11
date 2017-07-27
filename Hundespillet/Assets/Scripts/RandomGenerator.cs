@@ -9,9 +9,10 @@ public class RandomGenerator : MonoBehaviour {
 	public Vector3 spawnPoint{get{ return new Vector3 (0, -1, maxSpawnDistance);}}
 	public bool groundPresent;
 	public GameObject obstacle;
-	public GameObject parasolPrefab;
-	public GameObject coolerPrefab;
+	public GameObject strandSaetPrefab;
+	public GameObject chairPrefab;
 	public GameObject objectivePrefab;
+	public GameObject parasolPrefab;
 	public GameObject lastGroundSpawned;
 	public bool isHard = false;
 	public int hardGround=6;
@@ -73,11 +74,15 @@ public class RandomGenerator : MonoBehaviour {
 
 			} else if (randomNumber == 2) {
 
-				objectToSpawn = parasolPrefab;
-				heightOffset = 1;
+				objectToSpawn = strandSaetPrefab;
+				heightOffset = 0.49f;
+			} else if (randomNumber == 3) {
+
+				objectToSpawn = chairPrefab;
+				heightOffset = -0.12f;
 			} else {
 
-				objectToSpawn = coolerPrefab;
+				objectToSpawn = parasolPrefab;
 				heightOffset = 1;
 			}
 			GameObject obstacle_instance = (GameObject)Instantiate (objectToSpawn, ground.transform.position, objectToSpawn.transform.rotation);
