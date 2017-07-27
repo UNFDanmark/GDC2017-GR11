@@ -1,0 +1,238 @@
+fileFormatVersion: 2
+guid: fcd686cb2efc0334394870592997e931
+timeCreated: 1501181619
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Body,legs and head
+    100004: Bone001
+    100006: Bone002
+    100008: Bone003
+    100010: Bone004
+    100012: Bone005
+    100014: Bone007
+    100016: Bone008
+    100018: Bone009
+    100020: Bone014
+    100022: Bone016
+    100024: Bone017
+    100026: Bone018
+    100028: Bone020
+    100030: Bone021
+    100032: Bone023
+    100034: Bone024
+    100036: Bone025
+    100038: Bone026
+    100040: Bone027
+    100042: Bone028
+    100044: Bone029
+    100046: butt
+    100048: f_leg
+    100050: Master bone
+    100052: spine
+    100054: Tail
+    100056: V_Back_Leg1
+    100058: V_Back_Leg2
+    100060: V_Back_Leg3
+    100062: V_Back_Leg4
+    100064: V_Back_Leg_leg
+    400000: //RootNode
+    400002: Body,legs and head
+    400004: Bone001
+    400006: Bone002
+    400008: Bone003
+    400010: Bone004
+    400012: Bone005
+    400014: Bone007
+    400016: Bone008
+    400018: Bone009
+    400020: Bone014
+    400022: Bone016
+    400024: Bone017
+    400026: Bone018
+    400028: Bone020
+    400030: Bone021
+    400032: Bone023
+    400034: Bone024
+    400036: Bone025
+    400038: Bone026
+    400040: Bone027
+    400042: Bone028
+    400044: Bone029
+    400046: butt
+    400048: f_leg
+    400050: Master bone
+    400052: spine
+    400054: Tail
+    400056: V_Back_Leg1
+    400058: V_Back_Leg2
+    400060: V_Back_Leg3
+    400062: V_Back_Leg4
+    400064: V_Back_Leg_leg
+    2300000: Tail
+    3300000: Tail
+    4300000: Body,legs and head
+    4300002: Tail
+    7400000: Walk
+    9500000: //RootNode
+    13700000: Body,legs and head
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Walk
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 32
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Body,legs and head
+        weight: 1
+      - path: Body,legs and head/Tail
+        weight: 1
+      - path: Bone024
+        weight: 1
+      - path: Bone024/Bone025
+        weight: 1
+      - path: Bone024/Bone025/Bone026
+        weight: 1
+      - path: Bone027
+        weight: 1
+      - path: Bone027/Bone028
+        weight: 1
+      - path: Bone027/Bone028/Bone029
+        weight: 1
+      - path: Master bone
+        weight: 1
+      - path: Master bone/butt
+        weight: 1
+      - path: Master bone/butt/Bone001
+        weight: 1
+      - path: Master bone/butt/Bone001/Bone002
+        weight: 1
+      - path: Master bone/butt/Bone001/Bone002/Bone003
+        weight: 1
+      - path: Master bone/butt/Bone001/Bone002/Bone003/Bone004
+        weight: 1
+      - path: Master bone/butt/Bone001/Bone002/Bone003/Bone004/Bone005
+        weight: 1
+      - path: Master bone/butt/Bone023
+        weight: 1
+      - path: Master bone/butt/V_Back_Leg1
+        weight: 1
+      - path: Master bone/butt/V_Back_Leg1/V_Back_Leg2
+        weight: 1
+      - path: Master bone/butt/V_Back_Leg1/V_Back_Leg2/V_Back_Leg3
+        weight: 1
+      - path: Master bone/butt/V_Back_Leg1/V_Back_Leg2/V_Back_Leg3/V_Back_Leg4
+        weight: 1
+      - path: Master bone/butt/V_Back_Leg1/V_Back_Leg2/V_Back_Leg3/V_Back_Leg4/Bone014
+        weight: 1
+      - path: Master bone/spine
+        weight: 1
+      - path: Master bone/spine/Bone020
+        weight: 1
+      - path: Master bone/spine/Bone020/Bone021
+        weight: 1
+      - path: Master bone/spine/f_leg
+        weight: 1
+      - path: Master bone/spine/f_leg/Bone007
+        weight: 1
+      - path: Master bone/spine/f_leg/Bone007/Bone008
+        weight: 1
+      - path: Master bone/spine/f_leg/Bone007/Bone008/Bone009
+        weight: 1
+      - path: Master bone/spine/V_Back_Leg_leg
+        weight: 1
+      - path: Master bone/spine/V_Back_Leg_leg/Bone016
+        weight: 1
+      - path: Master bone/spine/V_Back_Leg_leg/Bone016/Bone017
+        weight: 1
+      - path: Master bone/spine/V_Back_Leg_leg/Bone016/Bone017/Bone018
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.4
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
