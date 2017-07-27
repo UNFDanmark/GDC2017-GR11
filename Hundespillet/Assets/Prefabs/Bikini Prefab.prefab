@@ -121,7 +121,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1000013274639364}
-  rotationSpeed: 20
+  rotationSpeed: 40
   amplitude: 0.5
   frequency: 3
   phase: 0
