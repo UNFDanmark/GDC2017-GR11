@@ -6,6 +6,7 @@ public class PointsHandlerScript : MonoBehaviour {
 	public int points = 0;
 	public Text pointsText;
 	public GameObject pointsHandler;
+	public GameObject scoreShowerScript;
 	// Use this for initialization
 	void Start () {
 		if(SceneManager.GetActiveScene().name=="BeachRun"){
@@ -14,8 +15,10 @@ public class PointsHandlerScript : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		
+	void Update (){
+		if (SceneManager.GetActiveScene ().name == "GameOver") {
+			Destroy (gameObject);
+		}
 	}
 
 	public void AddPoints(int pointsAdd)

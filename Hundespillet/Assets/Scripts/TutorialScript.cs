@@ -10,7 +10,7 @@ public class TutorialScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Time.timeSinceLevelLoad >= 3) {
+		if (Time.timeSinceLevelLoad >= 4) {
 			Destroy (gameObject);
 		}
 	}
