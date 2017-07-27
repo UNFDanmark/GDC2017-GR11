@@ -18,5 +18,6 @@ public class ObstacleScript : MonoBehaviour {
 		{
 
 			SceneManager.LoadScene("GameOver");
+		print ("Git Gud");
 		}
 }

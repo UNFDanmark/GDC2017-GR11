@@ -4,8 +4,7 @@ using System.Collections;
 public class GroundScript : MonoBehaviour {
 	
 	DifficultyHandlerScript difficultyHandler;
-	public Rigidbody groundRigidbody;
-	public int moveSpeed = 10;
+	public float moveSpeed = 20f;
 
 	// Use this for initialization
 
@@ -15,9 +14,12 @@ public class GroundScript : MonoBehaviour {
 
 	void FixedUpdate () {	 
 		Move (difficultyHandler.runSpeedModifier * moveSpeed);
+		if (transform.position.z <= -50) {
+			Destroy (gameObject);
+		}
 		
 	}
 	public void Move (float speed){
-		groundRigidbody.velocity = new Vector3 (0, 0, -speed);
+		transform.Translate(new Vector3 (0, 0, -speed));
 	}
 }

@@ -27,6 +27,7 @@ public class RandomGenerator : MonoBehaviour {
 	void Start ()
 	{
 		lastGroundSpawned = Instantiate (ground);
+		lastGroundSpawned.transform.position = new Vector3 (0, 0, 0);
 
 		SpawnGround ();
 	}
@@ -48,10 +49,10 @@ public class RandomGenerator : MonoBehaviour {
 				}
 				if (isHard == true) {
 					SpawnObstacles (4);
-					GameObject objectivePrefab_instance = (GameObject)Instantiate (objectivePrefab, ground.transform.position, Quaternion.identity);
+					GameObject objectivePrefab_instance = (GameObject)Instantiate (objectivePrefab);
 
 					objectivePrefab_instance.transform.parent = lastGroundSpawned.transform;
-					objectivePrefab_instance.transform.localPosition = new Vector3 (Random.Range (-0.45f, 0.45f), 1, Random.Range (-0.45f, 0.45f));
+					objectivePrefab_instance.transform.localPosition = new Vector3 (Random.Range (-5, 5), 1, Random.Range (-15, 15));
 
 				} else {
 					
@@ -64,7 +65,7 @@ public class RandomGenerator : MonoBehaviour {
 	}
 	public void SpawnObstacles(int numberOfObjects){
 		for (int i = 0; i < numberOfObjects; i++) {
-			int randomNumber = Random.Range (1, 4);
+			int randomNumber = Random.Range (1, 5);
 			GameObject objectToSpawn;
 			float heightOffset;
 			if (randomNumber == 1) {
@@ -79,15 +80,15 @@ public class RandomGenerator : MonoBehaviour {
 			} else if (randomNumber == 3) {
 
 				objectToSpawn = chairPrefab;
-				heightOffset = -0.12f;
+				heightOffset = 2.22f;
 			} else {
 
 				objectToSpawn = parasolPrefab;
-				heightOffset = 1;
+				heightOffset = 2.95f;
 			}
 			GameObject obstacle_instance = (GameObject)Instantiate (objectToSpawn, ground.transform.position, objectToSpawn.transform.rotation);
 			obstacle_instance.transform.parent = lastGroundSpawned.transform;
-			obstacle_instance.transform.localPosition = new Vector3 (Random.Range (-0.45f, 0.45f), heightOffset, Random.Range (-0.45f, 0.45f));	
+			obstacle_instance.transform.localPosition = new Vector3 (Random.Range (-5, 5), heightOffset, Random.Range (-15, 15));	
 		}
 	}
 }
