@@ -11,6 +11,7 @@ public class DoggScript : MonoBehaviour {
 	public AudioSource dogSound;
 	public AudioClip bikiniSound;
 	public AudioClip jumpSound;
+	public MeshRenderer bikiniRenderer;
 
 	void Awake () {
 		dogRigidbody = GetComponent<Rigidbody>();
@@ -55,6 +56,6 @@ public class DoggScript : MonoBehaviour {
 
 		dogSound.PlayOneShot (bikiniSound);
 
-
+		bikiniRenderer.enabled = true;
 	}
 }

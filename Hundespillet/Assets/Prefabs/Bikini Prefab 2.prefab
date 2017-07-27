@@ -9,45 +9,46 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1000013480097928}
+  m_RootGameObject: {fileID: 1000013266045526}
   m_IsPrefabParent: 1
---- !u!1 &1000013480097928
+--- !u!1 &1000013266045526
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 4000014214811498}
-  - 33: {fileID: 33000012606446328}
-  - 23: {fileID: 23000011546930010}
-  - 65: {fileID: 65000012301993700}
+  - 4: {fileID: 4000012559949400}
+  - 33: {fileID: 33000012034757716}
+  - 23: {fileID: 23000010330237208}
+  - 95: {fileID: 95000012374980010}
+  - 65: {fileID: 65000013781842276}
   m_Layer: 0
-  m_Name: "strand s\xE6t Prefab"
-  m_TagString: Obstacle
+  m_Name: Bikini Prefab 2
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4000014214811498
+--- !u!4 &4000012559949400
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000013480097928}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+  m_GameObject: {fileID: 1000013266045526}
+  m_LocalRotation: {x: -0.61571276, y: -0.34770367, z: -0.34770367, w: 0.61571276}
+  m_LocalPosition: {x: -6.0000005, y: 5.5555334, z: -11.1646185}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_LocalEulerAnglesHint: {x: -89.981, y: 0, z: -58.847004}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!23 &23000011546930010
+--- !u!23 &23000010330237208
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000013480097928}
+  m_GameObject: {fileID: 1000013266045526}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -55,7 +56,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 0bdda3b60a18c274891bac201a487f78, type: 2}
+  - {fileID: 2100000, guid: e91c10ec63367344d96fb4d9aa467cb0, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -71,22 +72,39 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
---- !u!33 &33000012606446328
+--- !u!33 &33000012034757716
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000013480097928}
-  m_Mesh: {fileID: 4300000, guid: 3d4b69f1cc193e746899bc1088cfbb21, type: 3}
---- !u!65 &65000012301993700
+  m_GameObject: {fileID: 1000013266045526}
+  m_Mesh: {fileID: 4300000, guid: e3178ad319514a0449c1c068b8d82bde, type: 3}
+--- !u!65 &65000013781842276
 BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000013480097928}
+  m_GameObject: {fileID: 1000013266045526}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.9045382, y: 3.6700695, z: 5.3264885}
-  m_Center: {x: 0.1324017, y: 0.022460938, z: 2.6632442}
+  m_Size: {x: 0.6216688, y: 13.07, z: 4.8}
+  m_Center: {x: -0.034617007, y: 0.0153512955, z: 2.4019017}
+--- !u!95 &95000012374980010
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013266045526}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: e3178ad319514a0449c1c068b8d82bde, type: 3}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
