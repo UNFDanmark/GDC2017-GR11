@@ -64,7 +64,7 @@ public class RandomGenerator : MonoBehaviour {
 	}
 	public void SpawnObstacles(int numberOfObjects){
 		for (int i = 0; i < numberOfObjects; i++) {
-			int randomNumber = Random.Range (1, 6);
+			int randomNumber = Random.Range (1, 4);
 			GameObject objectToSpawn;
 			float heightOffset;
 			if (randomNumber == 1) {
